@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up</title>
+    <link rel="stylesheet" href="success.css">
+    <div class="container">
+
+        <div class="popup" id="popup">
+            <img src="check (1).png">
+            <h2>Success</h2>
+            <p>You Have Successfuly Deposited 5 000 XAF<BR>Into Your Account!!!</i>.</p>
+            <a href="5000XAF/5000XAF1.html">
+                <button class="popup-button"> Continue</button></div>
+            </a>
+
+        </div>
+    </div>
+</head>
+<body>
+    <script>
+let popup = document.getElementById("popup");
+
+function openpopup(){
+popup.classlist.add("open-popup");
+}
+function closepopup(){
+    popup.classlist.remove("open-popup");
+ }
+    </script>
+</body>
+</html>

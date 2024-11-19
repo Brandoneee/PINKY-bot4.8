@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<Style>
+
+.custom-form .form-control {
+    color: var(--p-color);
+    border-radius: var(--border-radius-large);
+    font-size: var(--menu-font-size);
+    margin-bottom: 24px;
+    padding: 10px 20px;
+    outline: none;
+    transition: all 0.3s;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    background-color: #9100fd;
+    
+}
+
+
+
+
+
+
+    .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+</Style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up</title>
+    <link rel="stylesheet" href="success.css">
+    <div class="container">
+
+        <div class="popup" id="popup">
+            <img src="">
+            <h2></h2>
+<p>Withdraw Funds</p>
+
+<form class="custom-form profile-form" action="#" method="post" role="form">
+                 
+
+            <input class="form-control" tcontrolype="number" name="profile-email" id="profile-email" placeholder="Phone Number">
+            <input class="form-control" tcontrolype="number" name="profile-email" id="profile-email" placeholder="Ammount">
+<h5>min:1XAF</h5>
+<h5>max:90,000XAF</h5>
+           <a href="index.html">
+                <button class="popup-button"> Withdraw</button></a>
+            
+        </div>
+    </div>
+</head>
+<body>
+    <script>
+let popup = document.getElementById("popup");
+
+function openpopup(){
+popup.classlist.add("open-popup");
+}
+function closepopup(){
+    popup.classlist.remove("open-popup");
+ }
+    </script>
+</body>
+</html>

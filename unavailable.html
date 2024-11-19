@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop up</title>
+    <link rel="stylesheet" href="pop.css">
+    <div class="container">
+
+        <div class="popup" id="popup">
+            <img src="massage.png">
+            <h2>Error</h2>
+            <p>Unavailable At The Moment.</p>
+            <a href="the setting for my site - Copy.html">
+            <button class="popup-button">Try Toping Up Code </button></a>
+            <a href="accountbalance.html">
+            <button class="popup-button"> Back </button>
+        </a>
+        </div>
+    </div>
+</head>
+<body>
+    <script>
+let popup = document.getElementById("popup");
+
+function openpopup(){
+popup.classlist.add("open-popup");
+}
+function closepopup(){
+    popup.classlist.remove("open-popup");
+ }
+    </script>
+</body>
+</html>
